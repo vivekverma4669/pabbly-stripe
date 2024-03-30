@@ -32,7 +32,7 @@ app.post("/api/create-checkout-session", async (req, res) => {
                 name: product.title,
                 images: [product.image]
             },
-            unit_amount: Math.round(product.price * 10),
+            unit_amount: Math.round(product.price * 100),
         },
         quantity: 1,
     }));
@@ -42,7 +42,7 @@ app.post("/api/create-checkout-session", async (req, res) => {
         line_items: lineItems,
         mode: "payment",
         success_url: "http://localhost:3000/success",  //front end side 
-        cancel_url: "http://localhost:3000/cancel",
+        cancel_url:  "http://localhost:3000/cancel",
     });
 
  
