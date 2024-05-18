@@ -25,7 +25,7 @@ const Shop = () => {
 
   const makePayment = async (productId) => {
     try {
-      setProcessingPayment(true);
+       setProcessingPayment(true);
       const stripe = await loadStripe("pk_test_51OzbiMLYlhooYq6TsugoOf3mqMy61QkIuMJCUvwDn6NyAw4YNGnfSju5KDKy1WU3TryUVhSLXesPva01yNyQ262N00mIUoEnxF");
 
       const body = {
@@ -51,7 +51,8 @@ const Shop = () => {
       }
     } catch (error) {
       console.log(error);
-    } finally {
+    }
+     finally {
       setProcessingPayment(false);
     }
   };
@@ -60,9 +61,11 @@ const Shop = () => {
     <div>
       <h1>Fake Shop API</h1>
       <div className='post'>
+
         {loading ? (
           <img src='https://www.icegif.com/wp-content/uploads/2023/07/icegif-1260.gif' alt='load' />
-        ) : (
+        ):
+        (
           items.map((item) => (
             <div className="post-box" key={item.id}>
               <img src={item.image} className='post-img' alt={item.title}></img>
@@ -75,6 +78,7 @@ const Shop = () => {
             </div>
           ))
         )}
+        
       </div>
     </div>
   );

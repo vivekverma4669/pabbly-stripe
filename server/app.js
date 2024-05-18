@@ -46,7 +46,7 @@ app.post("/api/create-checkout-session", async (req, res) => {
     });
 
  
-    const payment = new paymentSchema({
+        const payment = new paymentSchema({
         item: products[0].title, 
         status: true, 
         transId: session.id,
