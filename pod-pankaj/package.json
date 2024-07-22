@@ -1,0 +1,19 @@
+{
+  "name": "pod-pankaj",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && node server.js",
+    "client": "cd asg-pod-p && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.15.0",
+    "concurrently": "^8.2.2"
+  },
+  "description": ""
+}

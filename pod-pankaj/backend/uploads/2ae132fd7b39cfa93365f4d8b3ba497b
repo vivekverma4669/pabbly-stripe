@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Document</title>
+</head>
+<body>
+    <h1>Artificial Intelligence</h1>
+    <p>  
+        Artificial intelligence (AI) is intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans and animals. 
+        Leading AI textbooks define the field as the study of "intelligent agents": any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goals.
+    </p>
+    <h2>History</h2>
+    <p>
+        The study of mechanical or "formal" reasoning began with philosophers and mathematicians in antiquity. 
+        The study of mathematical logic led directly to Alan Turing's theory of computation, which suggested that a machine, by shuffling symbols as simple as "0" and "1", could simulate any conceivable act of mathematical deduction.
+    </p>
+    <h2>Applications</h2>
+    <p>
+        AI is used in various applications such as self-driving cars, medical diagnosis, and automated customer service. 
+        These applications leverage machine learning, deep learning, and natural language processing to perform tasks that typically require human intelligence.
+    </p>
+</body>
+</html>
